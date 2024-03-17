@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Framework_test.BaseTest.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Submitordertest(failed)">
+    <classes>
+      <class name="Framework_test.Automation_framework.E2Etest">
+        <methods>
+          <include name="launchapp"/>
+          <include name="submitorder" invocation-numbers="0"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Framework_test.Automation_framework.E2Etest -->
+    </classes>
+  </test> <!-- Submitordertest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
